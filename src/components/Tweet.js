@@ -1,6 +1,7 @@
 import ProfileImage from "./ProfileImage";
 import Timestamp from "./Timestamp";
-import User from "../../lab-react-tweets/src/components/User";
+import User from "./User";
+import Message from "./Message";
 
 const Tweet = (props) => {
   return (
@@ -24,9 +25,10 @@ const Tweet = (props) => {
           <Timestamp time={props.tweet.timestamp}/>
         </div>
 
-        <p className="message">
+        {/* <p className="message">
           {props.tweet.message}
-        </p>
+        </p> */}
+        <Message message={props.tweet.message}/>
 
         <div className="actions">
           {/* Font Awesome icons */}

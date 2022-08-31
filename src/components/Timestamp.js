@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Timestamp = (props) => {
+const Timestamp = (tweet) => {
   return (
     <div>
-        <span className="timestamp">{props.time.timestamp}</span>
+        <span className="timestamp">{tweet.timestamp}</span>
     </div>
   )
 }
